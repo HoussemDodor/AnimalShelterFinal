@@ -23,7 +23,8 @@ public class Dog extends Animal{
     }
 
     // Methods
-    public String ToString() {
+    @Override
+    public String toString() {
         return super.toString() + ", last walk: " + this.LastWalk.toString();
     }
 }

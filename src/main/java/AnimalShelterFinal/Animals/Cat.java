@@ -13,7 +13,8 @@ public class Cat extends Animal{
         this.BadHabits = badHabits;
     }
 
-    public String ToString() {
+    @Override
+    public String toString() {
         return super.toString() + ", bad habits: " + BadHabits.toLowerCase();
     }
 }

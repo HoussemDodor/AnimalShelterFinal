@@ -36,7 +36,8 @@ public abstract class Animal {
         return  false;
     }
 
-    public String ToString(){
+    @Override
+    public String toString(){
         String reserved = "not reserved";
         if (this.ReservedBy != null)
         {

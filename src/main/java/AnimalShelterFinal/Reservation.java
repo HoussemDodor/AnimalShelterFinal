@@ -7,11 +7,7 @@ import java.util.List;
 
 public class Reservation {
 
-    private List<Animal> Animals = new ArrayList<>();
-
-    public List<Animal> getAnimals() {
-        return Animals;
-    }
+    public List<Animal> Animals = new ArrayList<>();
 
     public void NewCat(String name, Gender gender, String badHabits){
         this.Animals.add(new Cat(name, gender, badHabits));
