@@ -9,7 +9,7 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AnimalShelterFinal.FXMLController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AnimalShelterFinal.FXMLController">
     <children>
         <Label layoutX="14.0" layoutY="14.0" text="Species:" />
         <Label layoutX="14.0" layoutY="64.0" text="Name:" />
@@ -25,7 +25,7 @@
         <TextField id="txtBox_badHabits" fx:id="txtBadHabits" layoutX="14.0" layoutY="172.0" prefHeight="25.0" prefWidth="111.0" />
         <Button id="bttn_addAnimal" fx:id="btn_addAnimal" layoutX="19.0" layoutY="239.0" mnemonicParsing="false" onAction="#btn_AddAnimal_Click" text="Add Animal" />
         <Label layoutX="178.0" layoutY="14.0" text="Animals:" />
-        <ListView id="listbox_animals" fx:id="lstAnimals" layoutX="178.0" layoutY="32.0" prefHeight="155.0" prefWidth="270.0" />
+        <ListView id="listbox_animals" fx:id="lstAnimals" layoutX="178.0" layoutY="32.0" prefHeight="155.0" prefWidth="383.0" />
         <Label layoutX="178.0" layoutY="197.0" text="Reserve an animal:" />
         <Label layoutX="178.0" layoutY="222.0" text="Name:" />
         <TextField id="txtBox_reservorName" fx:id="txtReservor" layoutX="223.0" layoutY="218.0" />

@@ -10,8 +10,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
-import javax.swing.*;
-
 public class FXMLController implements Initializable {
     private Reservation reservations = new Reservation();
     @FXML private ComboBox cmbSpecies;
@@ -26,6 +24,7 @@ public class FXMLController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         cmbSpecies.getItems().setAll("Cat", "Dog");
+        cmbSpecies.getSelectionModel().select(0);
     }
 
     public void btn_Reserve_Click(ActionEvent event) {
@@ -34,10 +33,11 @@ public class FXMLController implements Initializable {
 
         if (animal != null)
         {
-            animal.Reserve(txtReservor.getText());
+            animal.reserve(txtReservor.getText());
             this.RefreshControls();
         }
 
+        txtReservor.clear();
         this.RefreshControls();
     }
 
@@ -56,6 +56,8 @@ public class FXMLController implements Initializable {
             this.reservations.NewDog(txtName.getText(), gender);
         }
 
+        txtName.clear();
+        txtBadHabits.clear();
         this.RefreshControls();
     }
 

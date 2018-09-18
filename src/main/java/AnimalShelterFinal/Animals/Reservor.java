@@ -10,8 +10,6 @@ public class Reservor {
         return Name;
     }
 
-    public LocalDateTime getReservedAt() { return ReservedAt; }
-
     public Reservor(String name, LocalDateTime reservedAt) {
         this.Name = name;
         this.ReservedAt = reservedAt;

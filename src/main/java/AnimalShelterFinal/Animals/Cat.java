@@ -4,13 +4,23 @@ public class Cat extends Animal{
 
     private String BadHabits;
 
-    public String getBadHabits() {
-        return BadHabits;
-    }
-
     public Cat(String name, Gender gender, String badHabits){
         super(name, gender);
         this.BadHabits = badHabits;
+    }
+
+    @Override
+    public int price() {
+        int p = 350;
+
+        if (BadHabits.length() > 15){
+            p = 35;
+        }
+        else {
+            int x = BadHabits.length() * 20;
+            p = p - x;
+        }
+        return p;
     }
 
     @Override
