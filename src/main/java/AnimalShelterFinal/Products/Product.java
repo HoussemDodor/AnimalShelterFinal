@@ -2,13 +2,22 @@ package AnimalShelterFinal.Products;
 
 import AnimalShelterFinal.ISellable;
 
-public class AnimalFood implements ISellable {
+import java.io.Serializable;
+
+public class Product implements ISellable, Serializable {
+    private int ID;
+    private static int countProducts = 0;
     private String Name;
     private int Price;
 
-    public AnimalFood(String name, int price){
+    public Product(String name, int price){
         Name = name;
         Price = price;
+        ID = countProducts + 1;
+    }
+
+    public void remove(){
+        countProducts =- 1;
     }
 
     @Override
