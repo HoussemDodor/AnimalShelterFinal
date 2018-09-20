@@ -5,6 +5,14 @@
     <groupId>AnimalShelterFinal</groupId>
     <artifactId>AnimalShelterFinal</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <packaging>jar</packaging>
 
     <name>AnimalShelterFinal</name>

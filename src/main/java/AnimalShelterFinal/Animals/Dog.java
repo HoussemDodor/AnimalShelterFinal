@@ -5,24 +5,23 @@ import java.time.LocalDateTime;
 public class Dog extends Animal{
 
     // fields
-    private LocalDateTime LastWalk;
+    private LocalDateTime lastWalk;
     private static int dogCount;
-    private int Price;
-
-    public boolean NeedsWalk() {
-        return  (LocalDateTime.now().getDayOfYear() - getLastWalk().getDayOfYear()) >= 1;
-    }
+    private int price;
 
     // properties
     public LocalDateTime getLastWalk() {
-        return LastWalk;
+        return this.lastWalk;
+    }
+    public boolean needsWalk() {
+        return  (LocalDateTime.now().getDayOfYear() - getLastWalk().getDayOfYear()) >= 1;
     }
 
     // constructor
     public Dog(String name, Gender gender) {
         super(name, gender);
-        this.LastWalk = LocalDateTime.now();
-        Price = calculatePrice();
+        this.lastWalk = LocalDateTime.now();
+        this.price = calculatePrice();
         dogCount += 1;
     }
 
@@ -42,11 +41,11 @@ public class Dog extends Animal{
 
     @Override
     public int price() {
-        return Price;
+        return this.price;
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", last walk: " + this.LastWalk.toString();
+        return super.toString() + ", last walk: " + this.lastWalk.toString();
     }
 }

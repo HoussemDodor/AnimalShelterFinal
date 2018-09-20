@@ -2,22 +2,24 @@ package AnimalShelterFinal.Animals;
 
 public class Cat extends Animal{
 
-    private String BadHabits;
+    private String badHabits;
+
+    public String getBadHabits() { return this.badHabits; }
 
     public Cat(String name, Gender gender, String badHabits){
         super(name, gender);
-        this.BadHabits = badHabits;
+        this.badHabits = badHabits;
     }
 
     @Override
     public int price() {
         int p = 350;
 
-        if (BadHabits.length() > 15){
+        if (this.badHabits.length() > 15){
             p = 35;
         }
         else {
-            int x = BadHabits.length() * 20;
+            int x = this.badHabits.length() * 20;
             p = p - x;
         }
         return p;
@@ -25,6 +27,6 @@ public class Cat extends Animal{
 
     @Override
     public String toString() {
-        return super.toString() + ", bad habits: " + BadHabits.toLowerCase();
+        return super.toString() + ", bad habits: " + this.badHabits.toLowerCase();
     }
 }

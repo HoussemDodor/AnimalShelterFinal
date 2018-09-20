@@ -64,12 +64,12 @@ public class FXMLController implements Initializable {
 
         if (this.cmbSpecies.getValue() == "Cat")
         {
-            this.reservations.NewCat(
+            this.reservations.newCat(
                     txtName.getText(), gender, txtBadHabits.getText());
         }
         else if (this.cmbSpecies.getValue() == "Dog")
         {
-            this.reservations.NewDog(txtName.getText(), gender);
+            this.reservations.newDog(txtName.getText(), gender);
         }
 
         txtName.clear();

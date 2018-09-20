@@ -3,15 +3,16 @@ import java.time.LocalDateTime;
 
 public class Reservor {
 
-    private String Name;
-    private LocalDateTime ReservedAt;
+    private String name;
+    private LocalDateTime reservedAt;
 
     public String getName() {
-        return Name;
+        return this.name;
     }
+    public LocalDateTime getReservedAt() { return this.reservedAt; }
 
     public Reservor(String name, LocalDateTime reservedAt) {
-        this.Name = name;
-        this.ReservedAt = reservedAt;
+        this.name = name;
+        this.reservedAt = reservedAt;
     }
 }
