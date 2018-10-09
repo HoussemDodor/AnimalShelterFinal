@@ -12,7 +12,7 @@ public class DogTest {
     private Dog dog;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         this.dog = new Dog("Sgt. Woof", Gender.male);
     }
 

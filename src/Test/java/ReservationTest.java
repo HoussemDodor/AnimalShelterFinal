@@ -10,7 +10,7 @@ public class ReservationTest {
     private Reservation reservation;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         reservation = new Reservation();
     }
 

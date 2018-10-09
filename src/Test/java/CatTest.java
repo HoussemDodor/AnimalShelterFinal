@@ -9,7 +9,7 @@ public class CatTest {
     private Cat cat;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         this.cat = new Cat("Ms. Meow", Gender.female, "Scratches couch");
     }
 
